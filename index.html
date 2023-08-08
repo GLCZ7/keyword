@@ -277,7 +277,7 @@
         .scroll-to-top {
             position: fixed;
             bottom: 20px;
-            right: 20px;
+            right: 25px;
             width: 50px;
             height: 50px;
             background-color: #363636;
@@ -289,14 +289,24 @@
             z-index: 9999;
         }
 
-        .scroll-to-top a {
-            text-decoration: none;
-            color: white;
-            font-size: 24px;
+        .scroll-to-top:active {
+            transform: translateY(10px);
         }
 
-        .scroll-to-top a:hover {
-            color: #ddd;
+        .scroll-to-top a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .scroll-to-top span {
+            font-size: 24px;
+            z-index: 1;
         }
     </style>
     <div class="container">
@@ -323,7 +333,8 @@
             <p style="top: -30px;margin-left: 99px;">Những lệnh có <b>"BB" - bắt buộc</b> : Ra lệnh y hệt từ hướng dẫn
             </p>
             </p>
-            <p style="top: -28px;"><b>Note IV: </b>Tốc độ phản hồi của công cụ phụ thuộc vào chất lượng âm thanh(ồn ào , tạp âm ,...) ,mức độ thu âm của microphone , giọng địa phương hay bạn nói quá nhanh và láu ...</p>
+            <p style="top: -28px;"><b>Note IV: </b>Tốc độ phản hồi của công cụ phụ thuộc vào chất lượng âm thanh(ồn ào ,
+                tạp âm ,...) ,mức độ thu âm của microphone , giọng địa phương hay bạn nói quá nhanh và láu ...</p>
         </div>
 
         <div class="click" id="click">
@@ -346,7 +357,7 @@
 
         <div class="scroll-to-top">
             <a href="#click">
-                <span>&#9650;</span> <!-- Ký tự mũi tên lên trên -->
+                <span>&#9650;</span>
             </a>
         </div>
 
@@ -354,7 +365,8 @@
         <div class="module1" id="module1">
             <h2 style="text-align: center;">I : Các lệnh dùng công cụ đơn giản</h2>
             <p><b> BB : lệnh điều khiển công cụ </b></p>
-            <p class="note">Note : Để mở file KeyWord.txt nhưng file này khá khó nhìn vì vậy xem lệnh dưới sẽ mở ra file index.html sẽ có giao diện dễ nhìn hơn</p>
+            <p class="note">Note : Để mở file KeyWord.txt nhưng file này khá khó nhìn vì vậy xem lệnh dưới sẽ mở ra file
+                index.html sẽ có giao diện dễ nhìn hơn</p>
             <p><b>TD : bạn có thể làm gì </b></p>
             <p class="note">Note : Các lệnh bot có thể thực hiện (đối với lệnh này bot sẽ mở file index.html)</p>
             <p><b> BB : đóng công cụ điều khiển </b></p>
@@ -367,7 +379,7 @@
             </p>
             <p><b> TD : giới thiệu </b></p>
             <p class="note">Note : Lời tự thẩm của tác giả :v</p>
-            
+
         </div>
 
         <div class="module2" id="module2">
