@@ -291,6 +291,12 @@
             align-items: center;
             cursor: pointer;
             z-index: 9999;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .scroll-to-top.show {
+            opacity: 1;
         }
 
         .scroll-to-top:active {
@@ -313,6 +319,22 @@
             z-index: 1;
         }
     </style>
+    <script>
+        const scrollToTopButton = document.querySelector(".scroll-to-top");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 0) {
+                scrollToTopButton.classList.add("show");
+            } else {
+                scrollToTopButton.classList.remove("show");
+            }
+        });
+
+        scrollToTopButton.addEventListener("click", (event) => {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
     <div class="container">
         <div class="banner" id="banner">
             <h2>KeyWord Computer Control With Voice GLCZ7</h2>
