@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.3/tippy.min.css"
-        integrity="sha384-W5KZEtjnDRvZWFMWSKnH8Z2ypHzLBKk6dFZYEaVvJcPGhD3H8nAg63BCbxP+qG8P" crossorigin="anonymous" />
     <title>KeyWord Computer Control With Voice GLCZ7</title>
     <link rel="shortcut icon" href="icons.ico" type="image/x-icon">
 </head>
@@ -19,14 +17,17 @@
         body {
             font-family: 'Quicksand', sans-serif;
             font-size: 18px;
-            /* overflow-x: hidden; */
+            overflow-x: hidden;
+            word-wrap: break-word;
         }
 
         p {
             position: relative;
             margin: 20px;
         }
-
+        ::selection{
+            color: red;
+        }
         .thanhngang {
             border-bottom: 2px solid black;
             margin-top: 10px;
@@ -62,6 +63,7 @@
             top: -5px;
             padding: 10px;
             background-color: #f9f9f9;
+
         }
 
         .note {
@@ -84,7 +86,6 @@
             padding: 10px;
             background-color: #f9f9f9;
         }
-
         .module1 {
             border: 2px solid black;
             margin-left: 10px;
@@ -315,7 +316,7 @@
         </div>
         <div class="header" id="header">
             <p><b>Note I :</b> Phải để tiếng anh hoặc dùng lệnh "đổi kiểu ngôn ngữ" để đổi kiểu </p>
-            <p style="left:65px; top: -10px;">Ví dụ nếu bạn dùng UniKey thì phải để icon chữ E - tức là chế độ tiếng anh
+            <p style="top: -10px;padding-left: 80px;">- Ví dụ nếu bạn dùng UniKey thì phải để icon chữ E - tức là chế độ tiếng anh
             </p>
             <p><b>Note II :</b> Vui lòng để ý hình cái mic ở phía phải thanh taskbar : </p>
             <p style="margin-left: 100px;top:-12px;">- Nếu có mic là đang nhận lệnh còn không hiện lên thì sẽ không nhận
@@ -330,11 +331,11 @@
                 câu
                 lệnh
                 có các từ khoá </b>
-            <p style="top: -30px;margin-left: 99px;">Những lệnh có <b>"BB" - bắt buộc</b> : Ra lệnh y hệt từ hướng dẫn
+            <p style="top: -30px;margin-left: 97px;">Những lệnh có <b>"BB" - bắt buộc</b> : Ra lệnh y hệt từ hướng dẫn
             </p>
             </p>
             <p style="top: -28px;"><b>Note IV: </b>Tốc độ phản hồi của công cụ phụ thuộc vào chất lượng âm thanh(ồn ào ,
-                tạp âm ,...) ,mức độ thu âm của microphone , giọng địa phương hay bạn nói quá nhanh và láu ...</p>
+                tạp âm ,...) ,mức độ thu âm của microphone , giọng địa phương hay bạn nói quá nhanh và láu. Tốt nhất là ra lệnh sau khi nghe thấy tiếng Ding Dong vì càng lâu sẽ trả lời lại càng chậm</p>
         </div>
 
         <div class="click" id="click">
