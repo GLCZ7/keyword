@@ -172,19 +172,28 @@
         }
 
         .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             border: 2px solid black;
             border-radius: 30px;
-            width: 300px;
             text-align: center;
             top: 110px;
             margin-bottom: 130px;
             padding: 10px;
             background-color: #f9f9f9;
+            font-size: 16px;
+            width: 480px;
         }
 
         .footer a {
             color: black;
             text-decoration: none
+        }
+        .thanhdoc{
+            border-left: 2px solid black;
+            height: 65px;
+            margin: 5px;
         }
 
         .clickbutton {
@@ -214,7 +223,8 @@
         .b7,
         .b8,
         .b9,
-        .ft {
+        .ft,
+        .download {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -241,7 +251,8 @@
         .clickbutton .b7:hover,
         .clickbutton .b8:hover,
         .clickbutton .b9:hover,
-        .clickbutton .ft:hover {
+        .clickbutton .ft:hover,
+        .clickbutton .download:hover {
             transform: translateY(3px);
         }
 
@@ -253,12 +264,17 @@
         .b6,
         .b7,
         .b8,
-        .b9,
-        .ft {
+        .b9 {
             text-decoration: none;
             color: black;
             font-weight: bold;
             font-size: 18px;
+        }
+
+        .ft,
+        .download {
+            font-size: 15px;
+            text-decoration: none;
         }
 
         .button-container {
@@ -274,6 +290,8 @@
         .click {
             padding: 30px;
         }
+
+
 
         .scroll-to-top {
             position: fixed;
@@ -348,6 +366,7 @@
             <p style="top: -28px;"><b>Note IV: </b>Tốc độ phản hồi của công cụ phụ thuộc vào chất lượng âm thanh(ồn ào ,
                 tạp âm ,...) ,mức độ thu âm của microphone , giọng địa phương hay bạn nói quá nhanh và láu. Tốt nhất là
                 ra lệnh sau khi nghe thấy tiếng Ding Dong vì càng lâu sẽ trả lời lại càng chậm</p>
+            <p style="top: -20px;"><b>Note V: </b>Có thể tải xuống file KeyWord_PDF.pdf bên dưới và in ra dán lên tường cho người dùng đọc:)</p>
         </div>
 
         <div class="click" id="click">
@@ -363,7 +382,8 @@
                     <div><a class="b7" title="Dấu và số" href="#module7">VII</a></div>
                     <div><a class="b8" title="Lệnh khác" href="#module8">VIII</a></div>
                     <div><a class="b9" title="Lệnh kết hợp" href="#module9">IX</a></div>
-                    <div><a class="ft" title="Link hỗ trợ của Designer" href="#footer">FT</a></div>
+                    <div><a class="ft" title="Link hỗ trợ của Designer" href="#footer">Help</a></div>
+                    <div><a href="#download" title="Download KeyWord_PDF" class="download">PDF</a></div>
                 </div>
             </div>
         </div>
@@ -568,9 +588,15 @@
             <p><b>4 : Có thể kết hợp các lệnh khác tuỳ thuộc vào suy nghĩ người dùng</b></p>
         </div>
         <div class="footer" id="footer">
-            Designed By <a href="https://www.facebook.com/TienMinh294" target="_blank">TienMinh - TaQuan</a><br>
-            <span style="font-size: 17.5px;">Trường THPT Yên Khánh B</span><br>
-            <a style="text-decoration: none;" href="https://glcz7.github.io" target="_blank"> _____GLCZ7_____ </a>
+            <div class="leftfooter">
+                Designed By <a href="https://www.facebook.com/TienMinh294" target="_blank">TienMinh - TaQuan</a><br>
+                <span>Trường THPT Yên Khánh B</span><br>
+                <a style="text-decoration: none;" href="https://glcz7.github.io" target="_blank"> _____GLCZ7_____ </a>
+            </div>
+            <div class="thanhdoc"></div>
+            <div class="buttondownload">
+                <a href="" id="download">Download KeyWord_PDF.pdf</a>
+            </div>
         </div>
     </div>
     <script>
@@ -588,6 +614,15 @@
             event.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
+
+
+        document.getElementById('download').addEventListener('click', function () {
+            var downloadUrl = './KeyWord_PDF.pdf';
+            var fileName = 'KeyWord_PDF.pdf';
+            this.href = downloadUrl;
+            this.download = fileName;
+        });
+        
     </script>
 </body>
 
