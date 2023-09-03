@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KeyWord Computer Control With Voice GLCZ7</title>
-    <link rel="shortcut icon" href="icon_GLCZ7.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="GLCZ7.ico" type="image/x-icon">
     <style>
         html {
             scroll-behavior: smooth;
@@ -23,12 +23,8 @@
             margin: 20px;
         }
 
-        ::selection {
-            color: red;
-        }
-
         .thanhngang {
-            border-bottom: 2px solid black;
+            border-bottom: 1px solid black;
             margin-top: 10px;
         }
 
@@ -40,7 +36,7 @@
         }
 
         .banner {
-            border: 2px solid black;
+            border: 1px solid black;
             border-radius: 15px;
             margin: 10px;
             width: 550px;
@@ -53,9 +49,8 @@
             font-size: 23px;
         }
 
-
         .header {
-            border: 2px solid black;
+            border: 1px solid black;
             margin: 10px;
             border-radius: 15px;
             position: relative;
@@ -87,48 +82,48 @@
         }
 
         .module1 {
-            border: 2px solid black;
+            border: 1px solid black;
             margin-left: 10px;
             border-radius: 15px;
         }
 
         .module2 {
-            border: 2px solid black;
+            border: 1px solid black;
             margin-left: 10px;
             border-radius: 15px;
             top: 10px;
         }
 
         .module3 {
-            border: 2px solid black;
+            border: 1px solid black;
             margin-left: 10px;
             border-radius: 15px;
             top: 20px;
         }
 
         .module4 {
-            border: 2px solid black;
+            border: 1px solid black;
             margin-left: 10px;
             border-radius: 15px;
             top: 30px;
         }
 
         .module5 {
-            border: 2px solid black;
+            border: 1px solid black;
             margin-left: 10px;
             border-radius: 15px;
             top: 40px;
         }
 
         .module6 {
-            border: 2px solid black;
+            border: 1px solid black;
             margin-left: 10px;
             border-radius: 15px;
             top: 50px;
         }
 
         .module7 {
-            border: 2px solid black;
+            border: 1px solid black;
             margin-left: 10px;
             border-radius: 15px;
             top: 60px;
@@ -146,14 +141,14 @@
         }
 
         .module8 {
-            border: 2px solid black;
+            border: 1px solid black;
             margin-left: 10px;
             border-radius: 15px;
             top: 70px;
         }
 
         .module9 {
-            border: 2px solid black;
+            border: 1px solid black;
             margin-left: 10px;
             border-radius: 15px;
             top: 80px;
@@ -175,7 +170,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border: 2px solid black;
+            border: 1px solid black;
             border-radius: 30px;
             text-align: center;
             top: 110px;
@@ -190,14 +185,15 @@
             color: black;
             text-decoration: none
         }
-        .thanhdoc{
-            border-left: 2px solid black;
+
+        .thanhdoc {
+            border-left: 1px solid black;
             height: 65px;
             margin: 5px;
         }
 
         .clickbutton {
-            border: 2px solid black;
+            border: 1px solid black;
             background-color: #f9f9f9;
             max-width: 700px;
             min-height: 60px;
@@ -231,7 +227,7 @@
             text-align: center;
             width: 35px;
             height: 35px;
-            border: 2px solid black;
+            border: 1px solid black;
             border-radius: 50%;
             margin-left: 13px;
             color: black;
@@ -271,11 +267,11 @@
             font-size: 18px;
         }
 
-        .ft,
-        .download {
+        .ft,.download {
             font-size: 15px;
             text-decoration: none;
         }
+
 
         .button-container {
             display: flex;
@@ -299,7 +295,7 @@
             right: 25px;
             width: 40px;
             height: 40px;
-            border: 2px solid rgb(70, 70, 70);
+            border: 1px solid rgb(70, 70, 70);
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -366,7 +362,8 @@
             <p style="top: -28px;"><b>Note IV: </b>Tốc độ phản hồi của công cụ phụ thuộc vào chất lượng âm thanh(ồn ào ,
                 tạp âm ,...) ,mức độ thu âm của microphone , giọng địa phương hay bạn nói quá nhanh và láu. Tốt nhất là
                 ra lệnh sau khi nghe thấy tiếng Ding Dong vì càng lâu sẽ trả lời lại càng chậm</p>
-            <p style="top: -20px;"><b>Note V: </b>Có thể tải xuống file KeyWord_Docx.docx bên dưới và in ra dán lên tường cho người dùng đọc:)</p>
+            <p style="top: -20px;"><b>Note V: </b>Có thể tải xuống file KeyWord_Docx.docx bên dưới và in ra dán lên
+                tường cho người dùng đọc:)</p>
         </div>
 
         <div class="click" id="click">
@@ -444,12 +441,11 @@
             <p><b> TD : xem youtube </b></p>
             <p class="note">Example: Xem diu tút</p>
             <p class="note"> Note : sẽ mở ra video nổi nhất với lệnh bạn nói</p>
-            <p><b>TD : dừng </b></p>
-            <p class="note">Example : dừng video</p>
+            <p><b>TD : dừng video </b></p>
             <p class="note">Note : chỉ hỗ trợ các web video có cho sử dụng phím tắt để điều khiển video ( điển hình
                 youtube)
             </p>
-            <p><b> TD : tiếp tục</b></p>
+            <p><b> TD : tiếp tục video</b></p>
             <p class="note">Example : tiếp tục video</p>
             <p><b> BB : tắt tiếng video </b></p>
             <p><b> BB : bật tiếng video</b></p>
@@ -477,7 +473,8 @@
                     đổi</span>
             </p>
             <p><b> TD : en tơ </b><span style="margin-left: 185px;">Note : Phím enter</span></p>
-            <p><b> TD : xóa </b><span style="margin-left: 199px;"> Note : Xóa 1 kí tự</span></p>
+            <p><b> TD : xóa trái</b><span style="margin-left: 165px;"> Note : Xóa bằng phím Backspace</span></p>
+            <p><b> TD : xóa phải</b><span style="margin-left: 155px;"> Note : Xóa bằng phím Delete</span></p>
             <p><b> TD : sao chép </b><span style="margin-left: 152px;"> Note : bôi đen rồi sao chép</span></p>
             <p><b> TD : dán </b><span style="margin-left: 198px;">Note : In ra cái vừa sao chép</span></p>
             <p><b> TD : cắt </b><span style="margin-left: 203px;"> Note : Cắt cái bôi đen</span></p>
@@ -587,7 +584,7 @@
             <p class="note">Note : để bôi đen 1 đoạn văn bản rồi đọc , sao chép hoặc di chuyển 1 cửa sổ </p>
             <p><b>4 : Có thể kết hợp các lệnh khác tuỳ thuộc vào suy nghĩ người dùng</b></p>
         </div>
-        <div class="footer" id="footer">
+        <div class="footer" id="footer" style="user-select: none;">
             <div class="leftfooter">
                 Designed By <a href="https://www.facebook.com/TienMinh294" target="_blank">TienMinh - TaQuan</a><br>
                 <span>Trường THPT Yên Khánh B</span><br>
@@ -622,7 +619,7 @@
             this.href = downloadUrl;
             this.download = fileName;
         });
-        
+
     </script>
 </body>
 
