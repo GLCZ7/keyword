@@ -58,7 +58,7 @@
             top: -5px;
             padding: 10px;
             background-color: #f9f9f9;
-
+            height: 520px;
         }
 
         .note {
@@ -75,7 +75,8 @@
         .module7,
         .module8,
         .module9,
-        .footer {
+        .footer,
+        .module10 {
             position: relative;
             width: 100%;
             padding: 10px;
@@ -155,6 +156,13 @@
             top: 80px;
         }
 
+        .module10 {
+            border: 1px solid black;
+            margin-left: 10px;
+            border-radius: 15px;
+            top: 90px;
+        }
+        .module1h2,
         .module2h2,
         .module3h2,
         .module4h2,
@@ -162,7 +170,8 @@
         .module6h2,
         .module7h2,
         .module8h2,
-        .module9h2 {
+        .module9h2,
+        .module10h2 {
             font-size: 15px;
             text-align: center;
         }
@@ -196,7 +205,7 @@
         .clickbutton {
             border: 1px solid black;
             background-color: #f9f9f9;
-            max-width: 700px;
+            max-width: 750px;
             min-height: 60px;
             border-radius: 15px;
             margin-bottom: 15px;
@@ -220,6 +229,7 @@
         .b7,
         .b8,
         .b9,
+        .b10,
         .ft,
         .download {
             display: flex;
@@ -248,6 +258,7 @@
         .clickbutton .b7:hover,
         .clickbutton .b8:hover,
         .clickbutton .b9:hover,
+        .clickbutton .b10:hover,
         .clickbutton .ft:hover,
         .clickbutton .download:hover {
             transform: translateY(3px);
@@ -261,14 +272,16 @@
         .b6,
         .b7,
         .b8,
-        .b9 {
+        .b9,
+        .b10 {
             text-decoration: none;
             color: black;
             font-weight: bold;
             font-size: 18px;
         }
 
-        .ft,.download {
+        .ft,
+        .download {
             font-size: 15px;
             text-decoration: none;
         }
@@ -287,8 +300,6 @@
         .click {
             padding: 30px;
         }
-
-
 
         .scroll-to-top {
             position: fixed;
@@ -340,29 +351,37 @@
             <h2>KeyWord Computer Control With Voice GLCZ7</h2>
         </div>
         <div class="header" id="header">
-            <p><b>Note I :</b> Phải để tiếng anh hoặc dùng lệnh "đổi kiểu ngôn ngữ" để đổi kiểu </p>
-            <p style="top: -10px;padding-left: 80px;">- Ví dụ nếu bạn dùng UniKey thì phải để icon chữ E - tức là chế độ
-                tiếng anh
-            </p>
-            <p><b>Note II :</b> Vui lòng để ý hình cái mic ở phía phải thanh taskbar : </p>
-            <p style="margin-left: 100px;top:-12px;">- Nếu có mic là đang nhận lệnh còn không hiện lên thì sẽ không nhận
-                lệnh
-            </p>
-            <p style="margin-left: 100px;top:-22px;">- Nếu đều không hiện lên thì có thể là mic hoặc mic của windows có
-                vấn
-                đề
-                vui lòng kiểm tra lại</p>
-            <p style=" top: -25px;">
-                <b>Note III : </b>Những lệnh có <b>"TD" - tự do</b>: Ra lệnh y hệt hoặc biến tấu đi đều được miễn trong
+            <p style=" top: -5px;">
+                <b>Note I : </b>Những lệnh có <b>"TD" - tự do</b>: Ra lệnh y hệt hoặc biến tấu đi đều được miễn trong
                 câu
                 lệnh
                 có các từ khoá </b>
-            <p style="top: -30px;margin-left: 97px;">Những lệnh có <b>"BB" - bắt buộc</b> : Ra lệnh y hệt từ hướng dẫn
+            <p style="top: -10px;margin-left: 85px;">Những lệnh có <b>"BB" - bắt buộc</b> : Ra lệnh y hệt từ hướng dẫn
             </p>
             </p>
-            <p style="top: -28px;"><b>Note IV: </b>Tốc độ phản hồi của công cụ phụ thuộc vào chất lượng âm thanh(ồn ào ,
+            <p><b>Note II :</b> Phải để tiếng anh hoặc dùng lệnh "đổi kiểu ngôn ngữ" để đổi kiểu </p>
+            <p style="top: -10px;padding-left: 80px;">- Ví dụ nếu bạn dùng UniKey thì phải để icon chữ E - tức là chế độ
+                tiếng anh
+            </p>
+            <p style="top: -15px;"><b>Note III :</b> Vui lòng để ý hình cái mic ở phía phải thanh taskbar : </p>
+            <p style="margin-left: 100px;top:-25px;">- Khi có hình cái microphone đang ghi âm đồng nghĩa với việc phần
+                mềm hoạt động bình thường
+            </p>
+            <p style="margin-left: 100px;top:-40px;">- Trong trường hợp không có mic + phần mềm không chạy hoặc nói
+                không phải tiếng việt có thể do :</p>
+            <p style="margin-left: 150px;top: -50px;">+ Bạn chưa cài file TiengViet_GLCZ7.reg</p>
+            <p style="margin-left: 150px;top: -60px;">+ Microphone của bạn không hoạt động hoặc lỗi: </p>
+            <p style="margin-left: 180px;top: -70px;">Vào setting -> Time & language -> Language & region -> Tick dấu 3
+                chấm(Tiếng Việt) -> Language opitions -> và kiểm tra xem phần Speech Recognition bạn đã download chưa
+                (nếu chưa chỉ cần download + cài file .reg rồi khởi động lại máy</p>
+
+            <p style="top: -70px;"><b>Note IV: </b>- Thời điểm nói tốt nhất là sau khi icon microphone ở góc phải thanh
+                taskbar nháy 1 cái)
+            <p style="top: -80px;margin-left: 92px;">- Tốc độ phản hồi của công cụ phụ thuộc vào chất lượng âm thanh(ồn
+                ào ,
                 tạp âm ,...) ,mức độ thu âm của microphone , giọng địa phương hay bạn nói quá nhanh và láu.</p>
-            <p style="top: -20px;"><b>Note V: </b>Có thể tải xuống file KeyWord_PNG.png bên dưới và in ra dán lên
+            </p>
+            <p style="top: -75px;"><b>Note V: </b>Có thể tải xuống file KeyWord_PNG.png bên dưới và in ra dán lên
                 tường cho người dùng đọc:)</p>
         </div>
 
@@ -370,17 +389,18 @@
             <div class="clickbutton">
                 <span style="font-size: 20px;"><b> Nút ấn các phần lệnh bên dưới </b></span>
                 <div class="button-container">
-                    <div><a class="b1" title="Các lệnh dùng công cụ" href="#module1">I</a></div>
-                    <div><a class="b2" title="Mở website , application" href="#module2">II</a></div>
-                    <div><a class="b3" title="Xử lý video" href="#module3">III</a></div>
-                    <div><a class="b4" title="Âm lượng" href="#module4">IV</a></div>
-                    <div><a class="b5" title="Xử lý văn bản , phím tắt" href="#module5">V</a></div>
-                    <div><a class="b6" title="Điều khiển chuột" href="#module6">VI</a></div>
-                    <div><a class="b7" title="Dấu và số" href="#module7">VII</a></div>
-                    <div><a class="b8" title="Lệnh khác" href="#module8">VIII</a></div>
-                    <div><a class="b9" title="Lệnh kết hợp" href="#module9">IX</a></div>
-                    <div><a class="ft" title="Link hỗ trợ của Designer" href="#footer">Help</a></div>
-                    <div><a href="#download" title="Download KeyWord_PNG" class="download">PNG</a></div>
+                    <div><a class="b1" href="#module1">I</a></div>
+                    <div><a class="b2" href="#module2">II</a></div>
+                    <div><a class="b3" href="#module3">III</a></div>
+                    <div><a class="b4" href="#module4">IV</a></div>
+                    <div><a class="b5" href="#module5">V</a></div>
+                    <div><a class="b6" href="#module6">VI</a></div>
+                    <div><a class="b7" href="#module7">VII</a></div>
+                    <div><a class="b8" href="#module8">VIII</a></div>
+                    <div><a class="b9" href="#module9">IX</a></div>
+                    <div><a class="b10" href="#module9">X</a></div>
+                    <div><a class="ft" href="#footer">Help</a></div>
+                    <div><a href="#download" class="download">PNG</a></div>
                 </div>
             </div>
         </div>
@@ -393,7 +413,10 @@
 
 
         <div class="module1" id="module1">
-            <h2 style="text-align: center;">I : Các lệnh dùng công cụ đơn giản</h2>
+            <div class="module1h2">
+                <h2 style="text-align: center;">I : Các lệnh sử dụng công cụ căn bản</h2>
+                <div class="thanhngang"></div>
+            </div>
             <p><b> BB : lệnh điều khiển công cụ </b></p>
             <p class="note">Note : Để mở file KeyWord.txt nhưng file này khá khó nhìn vì vậy xem lệnh dưới sẽ mở ra file
                 index.html sẽ có giao diện dễ nhìn hơn</p>
@@ -409,7 +432,6 @@
             </p>
             <p><b> TD : giới thiệu </b></p>
             <p class="note">Note : Lời tự thẩm của tác giả :v</p>
-
         </div>
 
         <div class="module2" id="module2">
@@ -452,10 +474,30 @@
             <p><b> BB : phóng to cửa sổ video</b></p>
             <p><b> BB : thu nhỏ cửa sổ video</b></p>
         </div>
-
         <div class="module4" id="module4">
             <div class="module4h2">
-                <h2>IV : Âm Lượng</h2>
+                <h2>IV : Điều khiển cửa sổ</h2>
+                <div class="thanhngang"></div>
+            </div>
+            <p><b> BB : thu nhỏ cửa sổ</b></p>
+            <p class="note">Note : Khi bạn yêu cầu thì cửa sổ đang được hiện lên đầu tiên sẽ bị ẩn đi </p>
+            <p><b> BB : chuyển cửa sổ </b></p>
+            <p class="note"> Note : Chuyển qua lại những cửa sổ đang mở</p>
+            <p><b> BB : đóng cửa sổ </b></p>
+            <p class="note"> Note : Đóng lại cửa sỏ đang hiện ra trước mặt</p>
+            <p><b> BB : đóng cửa sổ trình duyệt  </b></p>
+            <p class="note"> Note : Đóng lại 1 tab của trình duyệt</p>
+            <p><b> BB : chuyển cửa sổ trình duyệt </b></p>
+            <p class="note"> Note : Chuyển qua các tab của trình duyệt </p>
+            <p><b> BB : cửa sổ trình duyệt mới  </b></p>
+            <p class="note">Note : Mở 1 tab mới trên trình duyệt</p>
+            <p><b> BB : mở lại cửa sổ trình duyệt đã đóng </b></p>
+            <p><b> BB : tìm kiếm trên trình duyệt </b></p>
+            <p class="note"> Note : Để chuyển con trỏ chuột vào thanh tìm kiếm cho người dùng nhập văn bản</p>
+        </div>
+        <div class="module5" id="module5">
+            <div class="module5h2">
+                <h2>V : Âm Lượng</h2>
             </div>
             <div class="thanhngang"></div>
             <p><b>TD - âm lượng giảm</b></p>
@@ -464,9 +506,9 @@
             <p><b>TD - âm lượng tắt tiếng</b></p>
         </div>
 
-        <div class="module5" id="module5">
-            <div class="module5h2">
-                <h2>V : Xử lý văn bản , phím tắt</h2>
+        <div class="module6" id="module6">
+            <div class="module6h2">
+                <h2>VI : Xử lý văn bản , phím tắt</h2>
             </div>
             <div class="thanhngang"></div>
             <p><b> TD : lưu </b><span style="margin-left: 200px;"> Note : Chẳng hạn lưu lại file .py sau khi đã sửa
@@ -493,9 +535,9 @@
                     ra</span></p>
         </div>
 
-        <div class="module6" id="module6">
-            <div class="module6h2">
-                <h2>VI : Điều khiển chuột</h2>
+        <div class="module7" id="module7">
+            <div class="module7h2">
+                <h2>VII : Điều khiển chuột</h2>
             </div>
             <div class="thanhngang"></div>
             <p><b> BB : điều khiển chuột sang trái</b></p>
@@ -513,15 +555,15 @@
             <p><b> BB : điều khiển chuột phải dưới</b></p>
             <p><b> BB : điều khiển chuột trái trên</b></p>
             <p><b> BB : điều khiển chuột phải trên</b></p>
-            <p><b> BB : điều khiển chuột chính giữa lên</b></p>
+            <p><b> BB : điều khiển chuột chính giữa trên</b></p>
             <p><b> BB : điều khiển chuột chính giữa dưới</b></p>
             <p><b> BB : điều khiển chuột nhấn giữ</b></p>
             <p><b> BB : điều khiển chuột bỏ </b><span style="margin-left: 240px;">Note : Bỏ nhấn giữ</span></p>
         </div>
 
-        <div class="module7" id="module7">
-            <div class="module7h2">
-                <h2>VII : Dấu và số</h2>
+        <div class="module8" id="module8">
+            <div class="module8h2">
+                <h2>VIII : Dấu và số</h2>
             </div>
             <div class="thanhngang"></div>
             <div class="dau">
@@ -553,9 +595,9 @@
             </div>
         </div>
 
-        <div class="module8" id="module8">
-            <div class="module8h2">
-                <h2>VIII :Lệnh khác</h2>
+        <div class="module9" id="module9">
+            <div class="module9h2">
+                <h2>IX :Lệnh khác</h2>
             </div>
             <div class="thanhngang"></div>
             <p><b> TD : chụp màn hình</b></p>
@@ -570,9 +612,9 @@
             </p>
         </div>
 
-        <div class="module9" id="module9">
-            <div class="module9h2">
-                <h2>IX : Lệnh kết hợp</h2>
+        <div class="module10" id="module10">
+            <div class="module10h2">
+                <h2>X : Lệnh kết hợp</h2>
             </div>
             <div class="thanhngang"></div>
             <p><b>1 : cửa sổ tìm kiếm ==> nhập văn bản </b></p>
