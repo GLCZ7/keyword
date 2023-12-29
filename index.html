@@ -1,305 +1,555 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KeyWord Computer Control With Voice GLCZ7</title>
+    <title>KeyWord | GLCZ7</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="GLCZ7.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="scroll-to-top">
+        <a href="">
+            <span>&#9650;</span>
+        </a>
+    </div>
+
+    <script>
+        const scrollToTopButton = document.querySelector(".scroll-to-top");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 0) {
+                scrollToTopButton.classList.add("show");
+            } else {
+                scrollToTopButton.classList.remove("show");
+            }
+        });
+
+        scrollToTopButton.addEventListener("click", (event) => {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+
+    </script>
+    <div class="header">
+        <div class="header_h2">
+            <h2>VSpeak Master 7 Keyword</h2>
+        </div>
+        <div class="header_hdsd">
+            <div class="hdsd">
+                <a href="#">Hướng dẫn sử dụng & Sửa lỗi</a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="width_border_bottom"><div class="boder_bottom"></div></div> -->
+
+    <div class="box_select_button">
+        <div class="main_select_button">
+            <div class="select_button">
+                <a href="#1">Lệnh cơ bản</a>
+            </div>
+            <div class="select_button">
+                <a href="#2">Lệnh điều khiển chuột</a>
+            </div>
+            <div class="select_button">
+                <a href="#3">Lệnh điều khiển Website - Ứng dụng</a>
+            </div>
+            <div class="select_button">
+                <a href="#4">Lệnh điều khiển video</a>
+            </div>
+            <div class="select_button">
+                <a href="#5">Lệnh điều khiển cửa sổ</a>
+            </div>
+            <div class="select_button">
+                <a href="#6">Lệnh điều khiển âm lượng</a>
+            </div>
+            <div class="select_button">
+                <a href="#7">Lệnh xử lý văn bản, phím tắt</a>
+            </div>
+            <div class="select_button">
+                <a href="#8">Lệnh khác</a>
+            </div>
+            <div class="select_button">
+                <a href="#9">Lệnh kết hợp</a>
+            </div>
+            <div class="select_button">
+                <a href="#10">Liên hệ hỗ trợ</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main_modules">
+        <div class="module" id="1">
+            <h2>Lệnh cơ bản</h2>
+            <div class="width_border_bottom">
+                <div class="boder_bottom"></div>
+            </div>
+            <div class="module_note">
+                <p><b>TD : bạn có thể làm gì</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Mở trang web chứa các lệnh dùng để điều khiển</p>
+            </div>
+            <div class="module_note">
+                <p><b>BB : đóng công cụ điều khiển</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Tắt phần mềm trừ chế độ điều khiển chuột bằng khuôn mặt</p>
+            </div>
+            <div class="module_note">
+                <p><b>TD : tạm dừng</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Chuyển chế độ điều khiển bằng giọng nói vào chế độ tạm thời không nhận lệnh</p>
+            </div>
+            <div class="module_note">
+                <p><b>TD : hey alex</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Bật lại chế độ điều khiển bằng giọng nói sau khi đã dùng lệnh "tạm dừng" </p>
+            </div>
+        </div>
+        <div class="module" id="2">
+            <h2>Lệnh điều khiển chuột</h2>
+            <div class="width_border_bottom">
+                <div class="boder_bottom"></div>
+            </div>
+            <div class="module_note">
+                <p><b>TD : điều khiển chuột</b></p>
+            </div>
+            <div class="note">
+                <p>Ví dụ : bật chế độ điều khiển chuột
+                    <br>Giải thích : Khởi động chế độ điều khiển chuột bằng khuôn mặt (15s-30s)
+                </p>
+            </div>
+            <div class="module_note">
+                <p><b>TD : kết thúc chế độ chuột</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Tắt chế độ điều khiển chuột bằng khuôn mặt (Nếu chế độ điều khiển bằng giọng nói đang
+                    hoạt động)</p>
+            </div>
+            <div class="module_note">
+                <p><b>TD : nhấn giữ</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Nhấn giữ chuột trái</p>
+            </div>
+            <div class="module_note">
+                <p><b>TD : bật chế độ lăn chuột</b></p>
+            </div>
+            <div class="module_note">
+                <p><b>TD : hủy lăn chuột</b></p>
+            </div>
+            <div class="width_border_bottom">
+                <div class="boder_bottom"></div>
+            </div>
+            <div class="module_note">
+                <p><b>Cách điều khiển:</b></p>
+            </div>
+            <div class="note">
+                <p> - Chế độ khởi động thành công khi xuất hiện webcam nằm góc phải phía trên màn hình</p>
+            </div>
+            <div class="note">
+                <p>
+                <p> - Bảo đảm thiết bị hỗ trợ camera, môi trường có đủ ánh sáng và khuôn mặt nằm trong phạm vi webcam
+                </p>
+                </p>
+                <p><b>B1</b> - Há to hết cỡ mồm trong vòng 2-3s cho đến khi có hình chữ nhật đỏ xuất hiện thì ngập miệng
+                    lại ngay lập tức</p>
+            </div>
+            <div class="note">
+                <p>Thêm : - Khi há to miệng 2-3s lần nữa thì hình chữ nhất sẽ biến mất và vị trí của hình sẽ lấy dựa
+                    trên vị trí của đỉnh mũi</p>
+            </div>
+            <div class="note">
+                <p style="margin-left: 58px;">- Vì vậy bạn có thể đổi vị trí khác sau cho thuận tiện di chuyển đầu nhất
+                </p>
+            </div>
+            <div class="note">
+                <p><b>B2</b> - Thực hiện di chuyển sao cho đỉnh mũi ra khỏi khu vực hình chữ nhật theo cạnh nào thì
+                    chuột di chuyển theo hướng của cạnh đó</p>
+                    <p style="margin-left: 25px;margin-top: -15px;">- Nếu đang ở chế độ lăn chuột thì khi ta di chuyển mũi theo 2 hướng lên xuống thì tương ứng sẽ cuộn lên và cuộn xuống</p>
+            </div>
+            <div class="note">
+                <p>Thêm : - Có thể quay đầu hoặc di chuyển đầu sao cho webcam vẫn nhận diện được khuôn mặt</p>
+            </div>
+            <div class="note">
+                <p style="margin-left: 58px;">- Có 3 tốc độ:</p>
+            </div>
+            <div class="note">
+                <p style="margin-left: 70px;"> + Chậm ( Mũi ra khỏi hình chữ nhật 1 khoảng cực ngắn )</p>
+            </div>
+            <div class="note">
+                <p style="margin-left: 70px;"> + Bình thường ( Mũi ra khỏi hình chữ nhật 1 khoảng ngắn )</p>
+            </div>
+            <div class="note">
+                <p style="margin-left: 70px;"> + Nhanh ( Mũi ra khỏi hình chữ nhật 1 khoảng dài )</p>
+            </div>
+            <div class="note">
+                <p><b>B3</b> - Khi muốn click chuột trái ta há to mồm rồi ngậm lại ngay lập tức</p>
+            </div>
+            <div class="hdsd_chuot">
+                <div class="chuot">
+                    <a>Xem video hướng dẫn sử dụng</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="module" id="3">
+            <h2>Lệnh điều khiển Website - Ứng dụng</h2>
+            <div class="width_border_bottom">
+                <div class="boder_bottom"></div>
+            </div>
+            <div class="module_note">
+                <p><b>BB : bật google và tìm kiếm</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Sau khi gọi lệnh trên bạn sẽ được hỏi lại là muốn tìm kiếm gì trên googl, bạn chỉ cần
+                    nói thứ bạn muốn tìm kiếm</p>
+            </div>
+            <div class="module_note">
+                <p><b>BB : bật trình duyệt</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Mở trình duyệt mặc định của máy</p>
+            </div>
+            <div class="module_note">
+                <p><b>TD : mở</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Mở trực tiếp 1 website</p>
+            </div>
+            <div class="note">
+                <p>Ví dụ : mở facebook.com ( Đọc : mở phây búc chấm com )</p>
+            </div>
+            <div class="note">
+                <p>Ví dụ : mở youtube.com ( Đọc : mở diu túp chấm com )</p>
+            </div>
+            <div class="note">
+                <p>Ví dụ : mở mail.google.com ( Đọc : mở meo chấm gu gồ chấm com )</p>
+            </div>
+            <div class="module_note">
+                <p><b>TD : ứng dụng</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : bật ứng dụng đã cài đặt trong thiết bị</p>
+            </div>
+            <div class="note">
+                <p>Ví dụ : bật ứng dụng microsoft word ( Đọc : bật ứng dụng mai cờ rô shóp guốc )</p>
+            </div>
+            <div class="note">
+                <p>Ví dụ : khởi động ứng dụng excel ( Đọc : khởi động ứng dụng ích seo )</p>
+            </div>
+            <div class="note">
+                <p><b>(*)</b> Ví dụ : bật ứng dụng excel bật ứng dụng zalo bật ứng dụng notepad ( Đọc : bật ứng dụng ích
+                    seo bật ứng dụng zalo bật ứng dụng nót pết)</p>
+            </div>
+            <div class="note">
+                <p>Giải thích <b>(*)</b>: Trong trường hợp ta sử dụng nhiều lệnh ứng dụng thì phần mềm sẽ mở lần lượt
+                    các phần mềm được yêu cầu</p>
+            </div>
+            <div class="note">
+                <p>Thêm : Sử dụng bất kỳ từ nào trước từ ứng dụng trừ từ <b>"mở"</b> ( Do trùng với lệnh mở website )
+                </p>
+            </div>
+        </div>
+        <div class="module" id="4">
+            <h2>Lệnh điều khiển video</h2>
+            <div class="width_border_bottom">
+                <div class="boder_bottom"></div>
+            </div>
+            <div class="module_note">
+                <p><b>TD : xem youtube</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Mở trực tiếp video trên youtube</p>
+            </div>
+            <div class="note">
+                <p>Đọc : xem diu túp</p>
+            </div>
+            <div class="note">
+                <p>Thêm : Sau khi dùng lệnh bạn sẽ được yêu cầu nói tên video, phần mềm sẽ mở video
+                    xuất hiện đầu tiên ứng với từ khóa ban đưa ra</p>
+            </div>
+            <div class="module_note">
+                <p><b>TD : dừng video</b></p>
+            </div>
+            <div class="note">
+                <p>Đọc : dừng vi đi ô</p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Dừng video với website hỗ trợ phím tắt ( Youtube, ... )</p>
+            </div>
+            <div class="module_note">
+                <p><b>TD : tiếp tục video</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Tiếp tục video với website hỗ trợ phím tắt ( Youtube, ... )</p>
+            </div>
+            <div class="module_note">
+                <p><b>BB : tắt tiếng video</b></p>
+            </div>
+
+            <div class="note">
+                <p>Giải thích : Tắt tiếng video với website hỗ trợ phím tắt ( Youtube, ... )</p>
+            </div>
+            <div class="module_note">
+                <p><b>BB : bật tiếng video</b></p>
+            </div>
+
+            <div class="note">
+                <p>Giải thích : Bật tiếng video với website hỗ trợ phím tắt ( Youtube, ... )</p>
+            </div>
+            <div class="module_note">
+                <p><b>BB : phóng to cửa sổ video</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : phóng to video với website hỗ trợ phím tắt ( Youtube, ... )</p>
+            </div>
+            <div class="module_note">
+                <p><b>BB : thu nhỏ cửa sổ video</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : thu nhỏ video với website hỗ trợ phím tắt ( Youtube, ... )</p>
+            </div>
+
+        </div>
+        <div class="module" id="5">
+            <h2>Lệnh điều khiển cửa sổ</h2>
+            <div class="width_border_bottom">
+                <div class="boder_bottom"></div>
+            </div>
+            <div class="module_note">
+                <p><b>BB : đóng cửa sổ</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Đóng cửa sổ đang sử dụng</p>
+            </div>
+            <div class="module_note">
+                <p><b>BB : chuyển cửa sổ</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Chuyển qua lại giữa các cửa sổ đang mở</p>
+            </div>
+            <div class="module_note">
+                <p><b>BB : đóng cửa sổ trình duyệt </b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Đóng lại 1 tab của trình duyệt</p>
+            </div>
+            <div class="module_note">
+                <p><b>BB : chuyển cửa sổ trình duyệt</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Chuyển qua lại các tab của trình duyệt</p>
+            </div>
+            <div class="module_note">
+                <p><b>BB : cửa sổ trình duyệt mới</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Mở 1 tab mới trên trình duyệt</p>
+            </div>
+            <div class="module_note">
+                <p><b>BB : tìm kiếm trên trình duyệt</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Ấn vào thanh tìm kiếm trên trình duyệt</p>
+            </div>
+            <div class="module_note">
+                <p><b>BB : mở lại cửa sổ trình duyệt đã đóng</b></p>
+            </div>
+        </div>
+        <div class="module" id="6">
+            <h2>Lệnh điều khiển âm lượng</h2>
+            <div class="width_border_bottom">
+                <div class="boder_bottom"></div>
+            </div>
+            <div class="module_note">
+                <p><b>TD : âm lượng tăng</b></p>
+            </div>
+            <div class="note">
+                <p>Hoặc : tăng âm lượng</p>
+            </div>
+            <div class="module_note">
+                <p><b>TD : âm lượng giảm</b></p>
+            </div>
+            <div class="note">
+                <p>Hoặc : giảm âm lượng</p>
+            </div>
+            <div class="module_note">
+                <p><b>TD : âm lượng tối đa</b></p>
+            </div>
+            <div class="note">
+                <p>Hoặc : tối đa âm lượng</p>
+            </div>
+            <div class="module_note">
+                <p><b>TD : âm lượng bằng không</b></p>
+            </div>
+        </div>
+
+        <div class="module" id="7">
+            <h2>Lệnh xử lý văn bản, phím tắt</h2>
+            <div class="width_border_bottom">
+                <div class="boder_bottom"></div>
+            </div>
+            <div class="xulyvanbanvaphimtat">
+                <div class="module_note">
+                    <p><b>TD : nhập văn bản </b></p>
+                </div>
+                <div class="note">
+                    <p>Giải thích : Chuyển giọng nói thành văn bản và in nó ra</p>
+                </div>
+                <div class="module_note">
+                    <p><b>TD : đọc văn bản </b></p>
+                </div>
+                <div class="note">
+                    <p>Giải thích : Đọc phần văn bản đã bôi đen</p>
+                </div>
+                <div class="module_note">
+                    <p><b>TD : lưu</b></p>
+                </div>
+                <div class="note">
+                    <p>Giải thích : Lưu lại file, ...</p>
+                </div>
+                <div class="module_note">
+                    <p><b>TD : enter</b></p>
+                </div>
+                <div class="note">
+                    <p>Giải thích : Nhấn phím enter ( en tơ )</p>
+                </div>
+                <div class="module_note">
+                    <p><b>TD : xoá trái</b></p>
+                </div>
+                <div class="note">
+                    <p>Giải thích : Xóa bằng phím Backspace</p>
+                </div>
+                <div class="module_note">
+                    <p><b>TD : xóa phải</b></p>
+                </div>
+                <div class="note">
+                    <p>Giải thích : Xóa bằng phím Delete</p>
+                </div>
+                <div class="module_note">
+                    <p><b>TD : sao chép </b></p>
+                </div>
+                <div class="note">
+                    <p>Giải thích : Sao chép phần đã bôi đen hoặc file</p>
+                </div>
+                <div class="module_note">
+                    <p><b>TD : dán </b></p>
+                </div>
+                <div class="note">
+                    <p>Giải thích : In ra cái đã sao chép</p>
+                </div>
+                <div class="module_note">
+                    <p><b>TD : cắt </b></p>
+                </div>
+                <div class="note">
+                    <p>Giải thích : Cắt phần đã bôi đen hoặc file</p>
+                </div>
+                <div class="module_note">
+                    <p><b>TD : chọn tất cả</b></p>
+                </div>
+                <div class="note">
+                    <p>Giải thích : Lựa chọn tất cả hoặc bôi đen toàn bộ</p>
+                </div>
+                <div class="module_note">
+                    <p><b>TD : quay lại </b></p>
+                </div>
+                <div class="note">
+                    <p>Giải thích : Quay lại hành đồng đã thực hiện </p>
+                </div>
+                <div class="module_note">
+                    <p><b>TD : thư mục </b></p>
+                </div>
+                <div class="note">
+                    <p>Giải thích : Mở File Explore</p>
+                </div>
+                <div class="module_note">
+                    <p><b>TD : quay về màn hình chính</b> ( Màn hình Desktop )</p>
+                </div>
+            </div>
+        </div>
+        <div class="module" id="8">
+            <h2>Lệnh Khác</h2>
+            <div class="width_border_bottom">
+                <div class="boder_bottom"></div>
+            </div>
+            <div class="module_note">
+                <p><b>TD : chụp màn hình</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Chụp toàn màn hình và lưu ảnh ở thư mục ScreenShot_GLCZ7 ở màn hình Desktop</p>
+            </div>
+            <div class="module_note">
+                <p><b>TD : đổi dạng ngôn ngữ</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Chuyển đổi giữa dạng chữ V và E trong Unikey hoặc EVKey</p>
+            </div>
+            <div class="module_note">
+                <p><b>TD : ngày , giờ</b></p>
+            </div>
+            <div class="note">
+                <p>Ví dụ : Bây giờ là mấy giờ, Hôm nay là ngày bao nhiêu, ...</p>
+            </div>
+            <div class="module_note">
+                <p><b>TD : thời tiết</b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích : Trả lời các thông tin liên quan đến thời tiết của một địa điểm </p>
+            </div>
+            <div class="note">
+                <p>Thêm : Sau khi gọi lệnh bạn sẽ được hỏi vị trí muốn xem thời tiết ( Chỉ xử lý được tên tỉnh thành )</p>
+            </div>
+            <div class="module_note"><p><b>BB : cửa sổ run</b></p></div>
+            <div class="module_note"><p><b>BB : cửa sổ tìm kiếm</b></p></div>
+        </div>
+        <div class="module" id="9">
+            <h2>Lệnh </h2>
+            <div class="width_border_bottom">
+                <div class="boder_bottom"></div>
+            </div>
+            <div class="module_note">
+                <p><b></b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích :</p>
+            </div>
+        </div>
+        <div class="module" id="10">
+            <h2>Lệnh </h2>
+            <div class="width_border_bottom">
+                <div class="boder_bottom"></div>
+            </div>
+            <div class="module_note">
+                <p><b></b></p>
+            </div>
+            <div class="note">
+                <p>Giải thích :</p>
+            </div>
+        </div>
+
+    </div>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
         html {
             scroll-behavior: smooth;
         }
 
         body {
-            font-family: 'Quicksand', sans-serif;
-            font-size: 18px;
-            overflow-x: hidden;
-            word-wrap: break-word;
-        }
-
-        p {
-            position: relative;
-            margin: 20px;
-        }
-
-        .thanhngang {
-            border-bottom: 1px solid black;
-            margin-top: 10px;
-        }
-
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .banner {
-            border: 1px solid black;
-            border-radius: 15px;
+            font-family: "Quicksand", sans-serif;
             margin: 10px;
-            width: 550px;
-            font-size: 18px;
-            text-align: center;
-            background-color: #f9f9f9;
+            text-wrap: wrap;
+            min-height: 100vh;
         }
 
-        .banner h2 {
-            font-size: 23px;
-        }
-
-        .header {
-            border: 1px solid black;
-            margin: 10px;
-            border-radius: 15px;
-            position: relative;
-            top: -5px;
-            padding: 10px;
-            background-color: #f9f9f9;
-            height: 520px;
-        }
-
-        .note {
-            margin-top: -13px;
-            margin-left: 63px;
-        }
-
-        .module1,
-        .module2,
-        .module3,
-        .module4,
-        .module5,
-        .module6,
-        .module7,
-        .module8,
-        .module9,
-        .footer,
-        .module10 {
-            position: relative;
-            width: 100%;
-            padding: 10px;
-            background-color: #f9f9f9;
-        }
-
-        .module1 {
-            border: 1px solid black;
-            margin-left: 10px;
-            border-radius: 15px;
-        }
-
-        .module2 {
-            border: 1px solid black;
-            margin-left: 10px;
-            border-radius: 15px;
-            top: 10px;
-        }
-
-        .module3 {
-            border: 1px solid black;
-            margin-left: 10px;
-            border-radius: 15px;
-            top: 20px;
-        }
-
-        .module4 {
-            border: 1px solid black;
-            margin-left: 10px;
-            border-radius: 15px;
-            top: 30px;
-        }
-
-        .module5 {
-            border: 1px solid black;
-            margin-left: 10px;
-            border-radius: 15px;
-            top: 40px;
-        }
-
-        .module6 {
-            border: 1px solid black;
-            margin-left: 10px;
-            border-radius: 15px;
-            top: 50px;
-        }
-
-        .module7 {
-            border: 1px solid black;
-            margin-left: 10px;
-            border-radius: 15px;
-            top: 60px;
-        }
-
-        .dau {
-            flex: 1;
-            display: inline-block;
-            width: 100%;
-            column-count: 3;
-            column-gap: 5px;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            break-inside: avoid-column;
-        }
-
-        .module8 {
-            border: 1px solid black;
-            margin-left: 10px;
-            border-radius: 15px;
-            top: 70px;
-        }
-
-        .module9 {
-            border: 1px solid black;
-            margin-left: 10px;
-            border-radius: 15px;
-            top: 80px;
-        }
-
-        .module10 {
-            border: 1px solid black;
-            margin-left: 10px;
-            border-radius: 15px;
-            top: 90px;
-        }
-        .module1h2,
-        .module2h2,
-        .module3h2,
-        .module4h2,
-        .module5h2,
-        .module6h2,
-        .module7h2,
-        .module8h2,
-        .module9h2,
-        .module10h2 {
-            font-size: 15px;
-            text-align: center;
-        }
-
-        .footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border: 1px solid black;
-            border-radius: 30px;
-            text-align: center;
-            top: 110px;
-            margin-bottom: 130px;
-            padding: 10px;
-            background-color: #f9f9f9;
-            font-size: 16px;
-            width: 480px;
-        }
-
-        .footer a {
-            color: black;
-            text-decoration: none
-        }
-
-        .thanhdoc {
-            border-left: 1px solid black;
-            height: 65px;
-            margin: 5px;
-        }
-
-        .clickbutton {
-            border: 1px solid black;
-            background-color: #f9f9f9;
-            max-width: 750px;
-            min-height: 60px;
-            border-radius: 15px;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .clickbutton span {
-            padding: 10px;
-            margin-left: 10px;
-        }
-
-        .b1,
-        .b2,
-        .b3,
-        .b4,
-        .b5,
-        .b6,
-        .b7,
-        .b8,
-        .b9,
-        .b10,
-        .ft,
-        .download {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            width: 35px;
-            height: 35px;
-            border: 1px solid black;
-            border-radius: 50%;
-            margin-left: 13px;
-            color: black;
-            background-color: #f9f9f9;
-            font-weight: bold;
-            font-size: 18px;
-            transition: background-color 0.2s ease-in-out;
-            margin-bottom: 10px;
-        }
-
-        .clickbutton .b1:hover,
-        .clickbutton .b2:hover,
-        .clickbutton .b3:hover,
-        .clickbutton .b4:hover,
-        .clickbutton .b5:hover,
-        .clickbutton .b6:hover,
-        .clickbutton .b7:hover,
-        .clickbutton .b8:hover,
-        .clickbutton .b9:hover,
-        .clickbutton .b10:hover,
-        .clickbutton .ft:hover,
-        .clickbutton .download:hover {
-            transform: translateY(3px);
-        }
-
-        .b1,
-        .b2,
-        .b3,
-        .b4,
-        .b5,
-        .b6,
-        .b7,
-        .b8,
-        .b9,
-        .b10 {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .ft,
-        .download {
-            font-size: 15px;
-            text-decoration: none;
-        }
-
-
-        .button-container {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-            position: relative;
-            left: -10px;
-        }
-
-        .click {
-            padding: 30px;
-        }
 
         .scroll-to-top {
             position: fixed;
@@ -315,11 +565,15 @@
             cursor: pointer;
             z-index: 9999;
             opacity: 0;
-            transition: opacity 0.3s ease-in-out;
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
         }
 
         .scroll-to-top.show {
             opacity: 1;
+        }
+
+        .scroll-to-top:hover {
+            transform: scale(1.2);
         }
 
         .scroll-to-top:active {
@@ -338,331 +592,157 @@
         }
 
         .scroll-to-top span {
-            font-size: 24px;
+            font-size: 18px;
             z-index: 1;
         }
+
+        .width_border_bottom {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .boder_bottom {
+            border-bottom: 1px solid black;
+            width: 98%;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            user-select: none;
+            justify-content: space-between;
+        }
+
+        .header_h2 h2 {
+            border-bottom: 1px solid black;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .box_select_button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+
+        .main_select_button {
+            border: 1px solid black;
+            border-radius: 10px;
+            display: block;
+            columns: 2;
+            user-select: none;
+            padding: 15px 15px 0 15px;
+        }
+
+        .hdsd {
+            border: 1px solid black;
+            border-radius: 35px;
+            padding: 10px;
+        }
+
+        .hdsd a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+
+        .hdsd:hover {
+            transform: translateY(3px);
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+
+        .hdsd:active {
+            transform: translateY(6px);
+        }
+
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+        .select_button {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .select_button a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: black;
+            height: 100%;
+            font-size: 18px;
+        }
+
+        .select_button:hover {
+            transform: translateY(3px);
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+
+        .select_button:active {
+            transform: translateY(6px);
+        }
+
+        .module {
+            border: 1px solid black;
+            border-radius: 15px;
+            margin-bottom: 100px;
+        }
+
+        .module h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .module_note {
+            margin-left: 50px;
+        }
+
+        .module_note p {
+            font-size: 19px;
+        }
+
+        .note {
+            font-size: 17px;
+            margin-left: 50px;
+            margin-top: -15px;
+        }
+
+        .hdsd_chuot {
+            display: flex;
+            align-items: center;
+            margin: 20px 15px 20px 50px;
+        }
+
+        .chuot {
+            border: 1px solid black;
+            border-radius: 15px;
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .chuot a {
+            font-size: 13px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .chuot:hover {
+            transform: scale(1.15);
+        }
+
+        .xulyvanbanvaphimtat {
+            display: block;
+            columns: 2;
+        }
     </style>
-</head>
-
-<body>
-
-    <div class="container">
-        <div class="banner" id="banner">
-            <h2>KeyWord Computer Control With Voice GLCZ7</h2>
-        </div>
-        <div class="header" id="header">
-            <p style=" top: -5px;">
-                <b>Note I : </b>Những lệnh có <b>"TD" - tự do</b>: Ra lệnh y hệt hoặc biến tấu đi đều được miễn trong
-                câu
-                lệnh
-                có các từ khoá </b>
-            <p style="top: -10px;margin-left: 85px;">Những lệnh có <b>"BB" - bắt buộc</b> : Ra lệnh y hệt từ hướng dẫn
-            </p>
-            </p>
-            <p><b>Note II :</b> Phải để tiếng anh hoặc dùng lệnh "đổi kiểu ngôn ngữ" để đổi kiểu </p>
-            <p style="top: -10px;padding-left: 80px;">- Ví dụ nếu bạn dùng UniKey thì phải để icon chữ E - tức là chế độ
-                tiếng anh
-            </p>
-            <p style="top: -15px;"><b>Note III :</b> Vui lòng để ý hình cái mic ở phía phải thanh taskbar : </p>
-            <p style="margin-left: 100px;top:-25px;">- Khi có hình cái microphone đang ghi âm đồng nghĩa với việc phần
-                mềm hoạt động bình thường
-            </p>
-            <p style="margin-left: 100px;top:-40px;">- Trong trường hợp không có mic + phần mềm không chạy hoặc nói
-                không phải tiếng việt có thể do :</p>
-            <p style="margin-left: 150px;top: -50px;">+ Bạn chưa cài file TiengViet_GLCZ7.reg</p>
-            <p style="margin-left: 150px;top: -60px;">+ Microphone của bạn không hoạt động hoặc lỗi: </p>
-            <p style="margin-left: 180px;top: -70px;">Vào setting -> Time & language -> Language & region -> Tick dấu 3
-                chấm(Tiếng Việt) -> Language opitions -> và kiểm tra xem phần Speech Recognition bạn đã download chưa
-                (nếu chưa chỉ cần download + cài file .reg rồi khởi động lại máy</p>
-
-            <p style="top: -70px;"><b>Note IV: </b>- Thời điểm nói tốt nhất là sau khi icon microphone ở góc phải thanh
-                taskbar nháy 1 cái)
-            <p style="top: -80px;margin-left: 92px;">- Tốc độ phản hồi của công cụ phụ thuộc vào chất lượng âm thanh(ồn
-                ào ,
-                tạp âm ,...) ,mức độ thu âm của microphone , giọng địa phương hay bạn nói quá nhanh và láu.</p>
-            </p>
-            <p style="top: -75px;"><b>Note V: </b>Có thể tải xuống file KeyWord_PNG.png bên dưới và in ra dán lên
-                tường cho người dùng đọc:)</p>
-        </div>
-
-        <div class="click" id="click">
-            <div class="clickbutton">
-                <span style="font-size: 20px;"><b> Nút ấn các phần lệnh bên dưới </b></span>
-                <div class="button-container">
-                    <div><a class="b1" href="#module1">I</a></div>
-                    <div><a class="b2" href="#module2">II</a></div>
-                    <div><a class="b3" href="#module3">III</a></div>
-                    <div><a class="b4" href="#module4">IV</a></div>
-                    <div><a class="b5" href="#module5">V</a></div>
-                    <div><a class="b6" href="#module6">VI</a></div>
-                    <div><a class="b7" href="#module7">VII</a></div>
-                    <div><a class="b8" href="#module8">VIII</a></div>
-                    <div><a class="b9" href="#module9">IX</a></div>
-                    <div><a class="b10" href="#module9">X</a></div>
-                    <div><a class="ft" href="#footer">Help</a></div>
-                    <div><a href="#download" class="download">PNG</a></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="scroll-to-top">
-            <a href="#click">
-                <span>&#9650;</span>
-            </a>
-        </div>
-
-
-        <div class="module1" id="module1">
-            <div class="module1h2">
-                <h2 style="text-align: center;">I : Các lệnh sử dụng công cụ căn bản</h2>
-                <div class="thanhngang"></div>
-            </div>
-            <p><b> BB : lệnh điều khiển công cụ </b></p>
-            <p class="note">Note : Để mở file KeyWord.txt nhưng file này khá khó nhìn vì vậy xem lệnh dưới sẽ mở ra file
-                index.html sẽ có giao diện dễ nhìn hơn</p>
-            <p><b>TD : bạn có thể làm gì </b></p>
-            <p class="note">Note : Các lệnh bot có thể thực hiện (đối với lệnh này bot sẽ mở file index.html)</p>
-            <p><b> BB : đóng công cụ điều khiển </b></p>
-            <p class="note">Note : Do tránh ra lệnh đóng nhầm cửa sổ bằng lệnh alt f4 vì vậy có câu lệnh này</p>
-            <p><b>BB : tạm nghỉ</b></p>
-            <p class="note">Note : Sau khi tạm nghỉ bot sẽ không nhận bất kỳ lệnh nào </p>
-            <p><b> BB : hey alex</b></p>
-            <p class="note">Note : Để gọi bot dậy sau khi đã cho nó "tạm nghỉ" , sau khi dậy bot sẽ hoạt động như bình
-                thường
-            </p>
-            <p><b> TD : giới thiệu </b></p>
-            <p class="note">Note : Lời tự thẩm của tác giả :v</p>
-        </div>
-
-        <div class="module2" id="module2">
-            <div class="module2h2">
-                <h2>II : Mở website, application</h2>
-            </div>
-            <div class="thanhngang"></div>
-            <p><b> BB : bật google và tìm kiếm </b></p>
-            <p class="note"> Note : Sẽ được hỏi tìm kiếm gì</p>
-            <p><b> BB : bật trình duyệt </b></p>
-            <p class="note"> Note : Mở trình duyệt mặc định của máy</p>
-            <p><b> TD : mở </b></p>
-            <p class="note">Note : Mở trang web </p>
-            <p class="note">Example : mở facebook.com </p>
-            <p class="note">Cách đọc : mở phây búc chấm com</p>
-            <p><b> BB : bật ứng dụng </b></p>
-            <p class="note">Example : bật ứng dụng word</p>
-            <p class="note">Note: hiện tại mới chỉ hỗ trợ 4 ứng dụng word , excel , powerpoint , notepad hoặc đọc lệnh
-                kết
-                hợp
-                phía dưới để biết thêm </p>
-        </div>
-
-        <div class="module3" id="module3">
-            <div class="module3h2">
-                <h2>III : Xử lý video</h2>
-            </div>
-            <div class="thanhngang"></div>
-            <p><b> TD : xem youtube </b></p>
-            <p class="note">Example: Xem diu tút</p>
-            <p class="note"> Note : sẽ mở ra video nổi nhất với lệnh bạn nói</p>
-            <p><b>TD : dừng video </b></p>
-            <p class="note">Note : chỉ hỗ trợ các web video có cho sử dụng phím tắt để điều khiển video ( điển hình
-                youtube)
-            </p>
-            <p><b> TD : tiếp tục video</b></p>
-            <p class="note">Example : tiếp tục video</p>
-            <p><b> BB : tắt tiếng video </b></p>
-            <p><b> BB : bật tiếng video</b></p>
-            <p><b> BB : phóng to cửa sổ video</b></p>
-            <p><b> BB : thu nhỏ cửa sổ video</b></p>
-        </div>
-        <div class="module4" id="module4">
-            <div class="module4h2">
-                <h2>IV : Điều khiển cửa sổ</h2>
-                <div class="thanhngang"></div>
-            </div>
-            <p><b> BB : thu nhỏ cửa sổ</b></p>
-            <p class="note">Note : Khi bạn yêu cầu thì cửa sổ đang được hiện lên đầu tiên sẽ bị ẩn đi </p>
-            <p><b> BB : chuyển cửa sổ </b></p>
-            <p class="note"> Note : Chuyển qua lại những cửa sổ đang mở</p>
-            <p><b> BB : đóng cửa sổ </b></p>
-            <p class="note"> Note : Đóng lại cửa sỏ đang hiện ra trước mặt</p>
-            <p><b> BB : đóng cửa sổ trình duyệt  </b></p>
-            <p class="note"> Note : Đóng lại 1 tab của trình duyệt</p>
-            <p><b> BB : chuyển cửa sổ trình duyệt </b></p>
-            <p class="note"> Note : Chuyển qua các tab của trình duyệt </p>
-            <p><b> BB : cửa sổ trình duyệt mới  </b></p>
-            <p class="note">Note : Mở 1 tab mới trên trình duyệt</p>
-            <p><b> BB : mở lại cửa sổ trình duyệt đã đóng </b></p>
-            <p><b> BB : tìm kiếm trên trình duyệt </b></p>
-            <p class="note"> Note : Để chuyển con trỏ chuột vào thanh tìm kiếm cho người dùng nhập văn bản</p>
-        </div>
-        <div class="module5" id="module5">
-            <div class="module5h2">
-                <h2>V : Âm Lượng</h2>
-            </div>
-            <div class="thanhngang"></div>
-            <p><b>TD - âm lượng giảm</b></p>
-            <p><b>TD - âm lượng tăng</b></p>
-            <p><b>TD - âm lượng tối đa</b></p>
-            <p><b>TD - âm lượng tắt tiếng</b></p>
-        </div>
-
-        <div class="module6" id="module6">
-            <div class="module6h2">
-                <h2>VI : Xử lý văn bản , phím tắt</h2>
-            </div>
-            <div class="thanhngang"></div>
-            <p><b> TD : lưu </b><span style="margin-left: 200px;"> Note : Chẳng hạn lưu lại file .py sau khi đã sửa
-                    đổi</span>
-            </p>
-            <p><b> TD : en tơ </b><span style="margin-left: 185px;">Note : Phím enter</span></p>
-            <p><b> TD : xóa trái</b><span style="margin-left: 165px;"> Note : Xóa bằng phím Backspace</span></p>
-            <p><b> TD : xóa phải</b><span style="margin-left: 155px;"> Note : Xóa bằng phím Delete</span></p>
-            <p><b> TD : sao chép </b><span style="margin-left: 152px;"> Note : bôi đen rồi sao chép</span></p>
-            <p><b> TD : dán </b><span style="margin-left: 198px;">Note : In ra cái vừa sao chép</span></p>
-            <p><b> TD : cắt </b><span style="margin-left: 203px;"> Note : Cắt cái bôi đen</span></p>
-            <p><b> TD : quay lại </b><span style="margin-left: 162px;"> Note : Quay lại hành động trước , vd quay lại từ
-                    đã
-                    xóa</span></p>
-            <p><b> TD : chọn tất cả</b><span style="margin-left: 140px;">Note : Bôi đen toàn bộ</span></p>
-            <p><b> TD : đọc văn bản </b><span style="margin-left: 125px;"> Note : Đọc phần văn bản bạn đã bôi đen</span>
-            </p>
-            <p><b> TD : thư mục </b><span style="margin-left: 158px;">Note : Mở File Explore</span></p>
-            <p><b> TD : quay về màn hình chính </b><span style="margin-left: 25px;">Note : Quay về màn hình
-                    desktop</span>
-            </p>
-            <p><b> TD : nhập văn bản </b><span style="margin-left: 113px;">Note : Chuyển giọng nói thành văn bản và in
-                    nó
-                    ra</span></p>
-        </div>
-
-        <div class="module7" id="module7">
-            <div class="module7h2">
-                <h2>VII : Điều khiển chuột</h2>
-            </div>
-            <div class="thanhngang"></div>
-            <p><b> BB : điều khiển chuột sang trái</b></p>
-            <p><b> BB : điều khiển chuột sang phải</b></p>
-            <p><b> BB : điều khển chuột lên </b><span style="margin-left: 200px;"> Note : Di lên trên</span></p>
-            <p><b> BB : điều khiển chuột xuống </b><span style="margin-left: 186px;"> Note : Di xuống dưới</span>
-            </p>
-            <p><b> BB : điều khiển chuột chọn trái </b><span style="margin-left: 195px;">Note : Click chuột trái</span>
-            </p>
-            <p><b> BB : điều khiển chuột chọn hai lần </b><span style="margin-left: 147px;">Note : Click đúp</span>
-            </p>
-            <p><b> BB : điều khiển chuột chọn phải </b><span style="margin-left: 183px;"> Note : Click chuột phải</span>
-            </p>
-            <p><b> BB : điều khiển chuột trái dưới</b></p>
-            <p><b> BB : điều khiển chuột phải dưới</b></p>
-            <p><b> BB : điều khiển chuột trái trên</b></p>
-            <p><b> BB : điều khiển chuột phải trên</b></p>
-            <p><b> BB : điều khiển chuột chính giữa trên</b></p>
-            <p><b> BB : điều khiển chuột chính giữa dưới</b></p>
-            <p><b> BB : điều khiển chuột nhấn giữ</b></p>
-            <p><b> BB : điều khiển chuột bỏ </b><span style="margin-left: 240px;">Note : Bỏ nhấn giữ</span></p>
-        </div>
-
-        <div class="module8" id="module8">
-            <div class="module8h2">
-                <h2>VIII : Dấu và số</h2>
-            </div>
-            <div class="thanhngang"></div>
-            <div class="dau">
-                <p><b> TD : dấu bằng ( = ) </b></p>
-                <p><b> TD : dấu lớn hơn ( > )</b></p>
-                <p><b> TD : dấu nhỏ hơn ( < )</b>
-                </p>
-                <p><b> TD : dấu hỏi chấm ( ? )</b></p>
-                <p><b> TD : dấu chấm than ( ! )</b></p>
-                <p><b> TD : dấu a còng ( @ )</b></p>
-                <p><b> TD : dấu thăng ( # )</b></p>
-                <p><b> TD : dấu phần trăm ( % )</b></p>
-                <p><b> TD : dấu ngoặc tròn trái ( ( )</b></p>
-                <p><b> TD : dấu ngoặc tròn phải ( ) )</b></p>
-                <p><b> TD : dấu hai chấm ( : )</b></p>
-                <p><b> TD : dấu phẩy ( , )</b></p>
-                <p><b> TD : dấu chấm ( . )</b></p>
-                <p><b> TD : dấu cách( )</b></p>
-                <p><b> TD : số một( 1 )</b></p>
-                <p><b> TD : số hai( 2 )</b></p>
-                <p><b> TD : số ba( 3 )</b></p>
-                <p><b> TD : số bốn( 4 )</b></p>
-                <p><b> TD : số năm( 5 )</b></p>
-                <p><b> TD : số sáu( 6 )</b></p>
-                <p><b> TD : số bảy( 7 )</b></p>
-                <p><b> TD : số tám( 8 )</b></p>
-                <p><b> TD : số chín( 9 )</b></p>
-                <p><b> TD : số không( 0 )</b></p>
-            </div>
-        </div>
-
-        <div class="module9" id="module9">
-            <div class="module9h2">
-                <h2>IX :Lệnh khác</h2>
-            </div>
-            <div class="thanhngang"></div>
-            <p><b> TD : chụp màn hình</b></p>
-            <p class="note">Note : Chụp toàn màn hình và lưu ảnh ở thư mục ScreenShot_GLCZ7 ở màn hình desktop</p>
-            <p><b> TD : đổi dạng ngôn ngữ </b></p>
-            <p class="note">Note : Chuyển đổi giữa dạng chữ V và E trong Unikey hoặc EVKey</p>
-            <p><b> TD : ngày , giờ</b></p>
-            <p><b> BB : cửa sổ tìm kiếm</b></p>
-            <p><b> BB : cửa sổ run</b></p>
-            <p><b> TD : thời tiết</b></p>
-            <p class="note">Example : thời tiết hôm nay như thế nào xong trả lời câu hỏi tiếp theo nó hỏi
-            </p>
-        </div>
-
-        <div class="module10" id="module10">
-            <div class="module10h2">
-                <h2>X : Lệnh kết hợp</h2>
-            </div>
-            <div class="thanhngang"></div>
-            <p><b>1 : cửa sổ tìm kiếm ==> nhập văn bản </b></p>
-            <p class="note">Giúp bạn mở tất cả các ứng dụng của windows (chuyển sang tiếng anh tránh bị lỗi )</p>
-            <p><b>2 : mở trình duyệt ==> tìm kiếm trên trình duyệt ==> nhập văn bản</b></p>
-            <p class="note">Là câu lệnh kết hợp thủ công thay cho câu lệnh "mở google và tìm kiếm"</p>
-            <p><b>3 : điều khiển chuột nhấn giữ ==> điều khiển chuột trái dưới (hoặc bất kỳ hướng nào) ==> đọc văn bản
-                </b></p>
-            <p class="note">Note : để bôi đen 1 đoạn văn bản rồi đọc , sao chép hoặc di chuyển 1 cửa sổ </p>
-            <p><b>4 : Có thể kết hợp các lệnh khác tuỳ thuộc vào suy nghĩ người dùng</b></p>
-        </div>
-        <div class="footer" id="footer" style="user-select: none;">
-            <div class="leftfooter">
-                Designed By <a href="https://www.facebook.com/TienMinh294" target="_blank">TienMinh - TaQuan</a><br>
-                <span>Trường THPT Yên Khánh B</span><br>
-                <a style="text-decoration: none;" href="https://glcz7.github.io" target="_blank"> _____GLCZ7_____ </a>
-            </div>
-            <div class="thanhdoc"></div>
-            <div class="buttondownload">
-                <a href="" id="download">Download KeyWord_PNG.png</a>
-            </div>
-        </div>
-    </div>
-    <script>
-        const scrollToTopButton = document.querySelector(".scroll-to-top");
-
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 0) {
-                scrollToTopButton.classList.add("show");
-            } else {
-                scrollToTopButton.classList.remove("show");
-            }
-        });
-
-        scrollToTopButton.addEventListener("click", (event) => {
-            event.preventDefault();
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-
-
-        document.getElementById('download').addEventListener('click', function () {
-            var downloadUrl = './KeyWord_PNG.png';
-            var fileName = 'KeyWord_PNG.png';
-            this.href = downloadUrl;
-            this.download = fileName;
-        });
-
-    </script>
 </body>
 
 </html>
